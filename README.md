@@ -33,6 +33,8 @@ Install these two packages:
 ```bash
 npm install @react-native-documents/viewer
 npm install @react-native-documents/picker
+npm install react-native-image-picker
+npm install react-native-video
 ```
 
 Or using Yarn:
@@ -40,6 +42,8 @@ Or using Yarn:
 ```bash
 yarn add @react-native-documents/viewer
 yarn add @react-native-documents/picker
+yarn add react-native-image-picker
+yarn add react-native-video
 ```
 
 ---
