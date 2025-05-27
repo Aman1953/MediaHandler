@@ -72,7 +72,7 @@ yarn add @react-native-documents/picker
 ```bash
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
-import UpdateMediaPicker from './UpdateMediaPicker';
+import MediaHandler from './MediaHandler';
 
 const App = () => {
   const [mediaB, setMediaB] = useState([
