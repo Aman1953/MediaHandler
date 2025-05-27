@@ -1,2 +1,104 @@
-# MediaHandler
-MediaHandler is a React Native component that lets users upload, preview, and manage multiple file types including images, videos, and documents. It supports native viewing, prevents duplicates, and requires basic Android permissions and two helper packages.
+# 📁 MediaHandler – React Native File Picker & Preview Component
+
+**MediaHandler** is a plug-and-play React Native component that allows users to select, preview, and manage different types of files from their device.
+
+---
+
+## 🧩 Supported File Types
+
+- 📷 **Images** (JPG, PNG)
+- 🎥 **Videos** (MP4, MOV)
+- 📄 **PDF files**
+- 📝 **Word documents** (.docx)
+- 📊 **Excel files** (.xls, .xlsx)
+- 📽️ **PowerPoint files** (.ppt, .pptx)
+
+---
+
+## ✨ Key Features
+
+- Pick and preview **multiple files**
+- Show **thumbnails** for images/videos
+- Show **icons** for documents (PDF, Word, Excel, PowerPoint)
+- Open documents in **native apps** (Google Docs, Office, etc.)
+- Easily **remove files**
+- Automatically **prevents duplicate uploads**
+
+---
+
+## ✅ Required Packages
+
+Install these two packages:
+
+```bash
+npm install @react-native-documents/viewer
+npm install @react-native-documents/picker
+```
+
+Or using Yarn:
+
+```bash
+yarn add @react-native-documents/viewer
+yarn add @react-native-documents/picker
+```
+
+---
+
+## ⚙️ Android Permissions
+
+```bash
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<!-- For Android 13+ media access -->
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+<uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+```
+
+---
+
+## 💡 How It Works
+
+- Users can pick media or documents from their device.
+- Selected files appear in a horizontal scroll list.
+- Tapping a file opens a full-screen preview or native document viewer.
+- Files can be easily removed using the delete button.
+
+---
+
+## 📦 Example Usage (App.jsx)
+
+```bash
+import React, { useState } from 'react';
+import { SafeAreaView, ScrollView } from 'react-native';
+import UpdateMediaPicker from './UpdateMediaPicker';
+
+const App = () => {
+  const [mediaB, setMediaB] = useState([
+    { uri: 'https://www.w3schools.com/images/w3schools_green.jpg' }, // Sample image
+    { uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }, // Sample video
+  ]);
+
+  return (
+    <SafeAreaView>
+      <ScrollView contentContainerStyle={{ padding: 16 }}>
+        <UpdateMediaPicker
+          mediaFiles={mediaB}
+          setMediaFiles={setMediaB}
+          label="Upload Media"
+        />
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+export default App;
+
+```
+
+---
+
+## ✅ Perfect For
+**Any React Native app that needs easy, powerful, and multi-format file upload with previews!**
+
