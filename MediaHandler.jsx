@@ -158,7 +158,7 @@ const MediaHandler = ({ mediaFiles, setMediaFiles, label = "Pick Media", isMulti
                 style={[styles.pickMediaButton, { backgroundColor: '#e74c3c' }]}
                 onPress={handlePickDocuments}
             >
-                <Text style={styles.pickMediaButtonText}>Pick PDF or DOCX</Text>
+                <Text style={styles.pickMediaButtonText}>Upload Document</Text>
             </TouchableOpacity>
 
             <FlatList
