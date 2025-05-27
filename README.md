@@ -1,4 +1,11 @@
-# 📁 MediaHandler – React Native File Picker & Preview Component
+# 📄 Getting Started
+
+Before proceeding, **copy the `MediaHandler.jsx` file** from this repository into your React Native project.
+Once done, follow the steps below to start using this component in your project.
+
+---
+
+## 📁 MediaHandler – React Native File Picker & Preview Component
 
 **MediaHandler** is a plug-and-play React Native component that allows users to select, preview, and manage different types of files from their device.
 
