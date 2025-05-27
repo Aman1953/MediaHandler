@@ -28,7 +28,7 @@
 
 ## ✅ Required Packages
 
-Install these two packages:
+Install these four packages:
 
 ```bash
 npm install @react-native-documents/viewer
