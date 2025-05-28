@@ -1,5 +1,6 @@
 # 📄 Getting Started
 
+
 Before proceeding, **copy the `MediaHandler.jsx` file** from this repository into your React Native project.
 Once done, follow the steps below to start using this component in your project.
 
